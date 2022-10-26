@@ -1,19 +1,13 @@
-# DTS REA4 Final Project
+Link Live : https://dts4b-30-final.netlify.app/
 
-Ketentuan lengkap bisa dilihat di [Final Project Guidelines](https://docs.google.com/document/d/122KyWNQ4xxU4aFwWbM4vIfH7LM4AH2CZEZa3YsEHjCk). 
+![dts4b-30-final](https://user-images.githubusercontent.com/52275867/198048846-8c39b57a-0969-4a7b-bf6b-d47960ab4585.gif)
 
-## Daftar pair
 
-Tugas dikerjakan secara berpasangan, untuk daftar kelompok bisa dilihat pada masing-masing Classroom atau Discord Class.
+Projek kali ini kami membuat Movie List dimana kami menggunakan API dari tmdb. Fitur dari aplikasi sebagai berikut: 
 
-## Fork and Clone
-
-Mohon perwakilan dari pair bisa melakukan fork repo ini dan clone, untuk repositori yang di fork menggunakan penamaan:
-
-`dts4[a/b/c]-[nomor pair]-final`
-
-Contoh: `dts4a-01-final`
-
-## Branching, commit
-
-Branch dapat sesuai dengan kebutuhan dan kesepakatan bersama dalam pair, namun hasil akhirnya harus di merge ke branch `main` dan di push ke Github. Pastikan hasil akhir kode sudah ter-push!
+- Register User 
+- Login User
+- List Movie
+- Sort Movie
+- Detail Movie
+- Log Out User 
