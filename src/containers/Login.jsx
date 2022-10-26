@@ -42,7 +42,7 @@ export default function SignInSide() {
     const password = data.get('password');
 
     try {
-        const {user} = await signInWithEmailAndPassword(auth, email, password);
+        await signInWithEmailAndPassword(auth, email, password);
         navigate("/");
     } catch (error) {
         setErrorMassage('Invalid Credential');
