@@ -8,17 +8,18 @@ const BASE_IMAGE_URL = "http://image.tmdb.org/t/p/original";
 const Detail = () => {
   const [movie, setMovie] = useState([]);
   let params = useParams();
-
   useEffect(() => {
     const fetchMovies = async () => {
       try {
         const fetchedMovie = await tmdb.get(`/movie/${params.id}`);
         setMovie(fetchedMovie.data);
+        console.log(movie);
       } catch (error) {
         console.log(error);
       }
     };
-    fetchMovies();
+    fetchMovies(movie);
+    //eslint-disable-next-line
   }, []);
   return (
     <Paper
@@ -34,7 +35,8 @@ const Detail = () => {
       }}>
       <img
         src={`${BASE_IMAGE_URL}${movie.backdrop_path}`}
-        alt="img" width="500px"
+        alt="img"
+        width="500px"
       />
 
       <Box
@@ -83,18 +85,14 @@ const Detail = () => {
           </Box>
         </Grid>
       </Grid>
-      
-      <Button variant="contained" sx={{ ml: 2 }} >
-            <Link
-              style={{ color: "inherit", textDecoration: "inherit" }}
-              to="/"
-            >
-              Back
-            </Link>
-        </Button>
-        <br />
+
+      <Button variant="contained" sx={{ ml: 2 }}>
+        <Link style={{ color: "inherit", textDecoration: "inherit" }} to="/">
+          Back
+        </Link>
+      </Button>
+      <br />
     </Paper>
-    
   );
 };
 
